@@ -76,25 +76,33 @@
 # # logicalerror
 # # the bug is at line 72 != 
 # 10. Safe Calculator
-try:
-    num1 = int(input("Number 1: "))
-    op = input("Operator: ")
+# try:
+#     num1 = int(input("Number 1: "))
+#     op = input("Operator: ")
     
-    num2 = int(input("Number 2: "))
+#     num2 = int(input("Number 2: "))
 
-    if op == "+":
-        print(num1 + num2)
-    elif op == "-":
-        print(num1 - num2)
-    elif op == "*":
-        print(num1 * num2)
-    elif op == "/":
-        print(num1 / num2)  
-    else:
-        print("Unknown operator")    
-except ZeroDivisionError:
-    print("error: division by zero")   
+#     if op == "+":
+#         print(num1 + num2)
+#     elif op == "-":
+#         print(num1 - num2)
+#     elif op == "*":
+#         print(num1 * num2)
+#     elif op == "/":
+#         print(num1 / num2)  
+#     else:
+#         print("Unknown operator")    
+# except ZeroDivisionError:
+#     print("error: division by zero")   
+# except ValueError:
+#     print("error: is not a number")    
+# finally:
+#     print("Calculator closed")   
+
+# Extra 1. Temperature Converter
+celsius = input("Celsius: ")
+try:
+    fahrenheit = int(celsius) * 9 / 5 + 32
+    print(fahrenheit)      
 except ValueError:
-    print("error: is not a number")    
-finally:
-    print("Calculator closed")    
+    print("error: Temperature must be a number ")
