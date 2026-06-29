@@ -30,17 +30,25 @@
 # except KeyError:
 #     print(" Item not found ")
 # 5. Multiple Error Types
-numbers = [100, 200, 300]
+# numbers = [100, 200, 300]
 
+# try:
+#     index = int(input("Choose index: "))
+#     divider = int(input("Choose divider: "))
+
+#     result = numbers[index] / divider
+#     print(result) 
+# except ValueError:
+#     print("error: invalid number input")
+# except IndexError:
+#     print("error: list index out of range")           
+# except ZeroDivisionError:
+#     print("error: division by zero")    
+# 6. Finally Message
 try:
-    index = int(input("Choose index: "))
-    divider = int(input("Choose divider: "))
-
-    result = numbers[index] / divider
-    print(result) 
+    score = int(input("Enter score: "))
+    print("Your score is", score)
 except ValueError:
-    print("error: invalid number input")
-except IndexError:
-    print("error: list index out of range")           
-except ZeroDivisionError:
-    print("error: division by zero")    
+    print("Invalid score ")
+finally:
+    print("Check finished ")    
