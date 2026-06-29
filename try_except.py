@@ -62,5 +62,7 @@
 # 8. Wrong Discount
 price = 100
 discount = 20
+print(discount/100) # this the bug
 final_price = (price/100)*(100-discount)
 print(final_price) # 99.8
+# 9. Login Attempts Logic Bug
