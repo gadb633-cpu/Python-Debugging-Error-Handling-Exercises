@@ -6,10 +6,16 @@
 # except ValueError:
 #     print("Age must be a number ")
 # 2. Safe Division
+# try:
+#     a = int(input("First number: "))
+#     b = int(input("Second number: "))
+#     print(a / b)
+# except ZeroDivisionError:
+#     print("Cannot divide by zero ")
+# 3. Number From List
+numbers = [10, 20, 30]
 try:
-    a = int(input("First number: "))
-    b = int(input("Second number: "))
-    print(a / b)
-except ZeroDivisionError:
-    print("Cannot divide by zero ")
-    
+    index = int(input("Choose index: "))
+    print(numbers[index])
+except IndexError:
+    print("Index not found ")
