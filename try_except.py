@@ -114,13 +114,29 @@
 # except IndexError:
 #     print("error: Word is empty")    
 
-# Extra 3. Average Score
-scores = [90, 80, 100]
-total = 0
+# # Extra 3. Average Score
+# scores = [90, 80, 100]
+# total = 0
 
-for score in scores:
-    total += score
+# for score in scores:
+#     total += score
 
-average = total / len(scores)
-print(average) # 33.336
-# expected average is: 90
+# average = total / len(scores)
+# print(average) # 33.336
+# # expected average is: 90
+
+# Extra 4. Product Price
+products = {
+    "pen": 4,
+    "notebook": 12}
+
+try:
+    product = input("Product: ")
+    amount = int(input("Amount: "))
+
+    print(products[product] * amount)
+except KeyError:
+    print("error: the key is not exsict ")
+except ValueError:
+    print("error: the price is only a number ")
+        
