@@ -140,14 +140,26 @@
 # except ValueError:
 #     print("error: the price is only a number ")
 
-# Extra 5. File Name Check Without File Handling
-files = ["data.txt", "users.csv", "notes.txt"]
+# # Extra 5. File Name Check Without File Handling
+# files = ["data.txt", "users.csv", "notes.txt"]
 
-try:
-    choice = int(input("Choose file number: "))
-    print(files[choice])
-except ValueError:
-    print("error: enter only number ")
-except IndexError:
-    print("error: the index out of range")
-    
+# try:
+#     choice = int(input("Choose file number: "))
+#     print(files[choice])
+# except ValueError:
+#     print("error: enter only number ")
+# except IndexError:
+#     print("error: the index out of range")
+
+# Extra 6. Wrong Maximum
+numbers = [4, 10, 2, 8]
+maximum = 0
+
+for number in numbers:
+    if number > maximum:
+        maximum = number
+
+print(maximum)
+# the wrong output is all the time the number is biger
+# the expected output is 10
+# logicalerror
