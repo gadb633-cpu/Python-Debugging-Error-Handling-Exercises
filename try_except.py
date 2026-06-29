@@ -108,8 +108,19 @@
 #     print("error: Temperature must be a number ")
 
 # Extra 2. First Letter
-try:
-    word = input("Enter word: ")
-    print(word[0])    
-except IndexError:
-    print("error: Word is empty")    
+# try:
+#     word = input("Enter word: ")
+#     print(word[0])    
+# except IndexError:
+#     print("error: Word is empty")    
+
+# Extra 3. Average Score
+scores = [90, 80, 100]
+total = 0
+
+for score in scores:
+    total += score
+
+average = total / len(scores)
+print(average) # 33.336
+# expected average is: 90
