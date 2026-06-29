@@ -100,9 +100,16 @@
 #     print("Calculator closed")   
 
 # Extra 1. Temperature Converter
-celsius = input("Celsius: ")
+# celsius = input("Celsius: ")
+# try:
+#     fahrenheit = int(celsius) * 9 / 5 + 32
+#     print(fahrenheit)      
+# except ValueError:
+#     print("error: Temperature must be a number ")
+
+# Extra 2. First Letter
 try:
-    fahrenheit = int(celsius) * 9 / 5 + 32
-    print(fahrenheit)      
-except ValueError:
-    print("error: Temperature must be a number ")
+    word = input("Enter word: ")
+    print(word[0])    
+except IndexError:
+    print("error: Word is empty")    
