@@ -65,14 +65,36 @@
 # print(discount/100) # this the bug
 # final_price = (price/100)*(100-discount)
 # print(final_price) # 99.8
-# 9. Login Attempts Logic Bug
-password = "abc123"
-guess = input("Enter password: ")
+# # 9. Login Attempts Logic Bug
+# password = "abc123"
+# guess = input("Enter password: ")
 
-if guess == password:
-    print("Login successful")
-else:
-    print("Wrong password")
-# logicalerror
-# the bug is at line 72 != 
+# if guess == password:
+#     print("Login successful")
+# else:
+#     print("Wrong password")
+# # logicalerror
+# # the bug is at line 72 != 
+# 10. Safe Calculator
+try:
+    num1 = int(input("Number 1: "))
+    op = input("Operator: ")
     
+    num2 = int(input("Number 2: "))
+
+    if op == "+":
+        print(num1 + num2)
+    elif op == "-":
+        print(num1 - num2)
+    elif op == "*":
+        print(num1 * num2)
+    elif op == "/":
+        print(num1 / num2)  
+    else:
+        print("Unknown operator")    
+except ZeroDivisionError:
+    print("error: division by zero")   
+except ValueError:
+    print("error: is not a number")    
+finally:
+    print("Calculator closed")    
