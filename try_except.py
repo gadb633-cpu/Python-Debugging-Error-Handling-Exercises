@@ -164,15 +164,31 @@
 # # the expected output is 10
 # # logicalerror
 
-# Extra 7. User Profile
-user = {
-    "name": "Dana",
-    "age": 25}
+# # Extra 7. User Profile
+# user = {
+#     "name": "Dana",
+#     "age": 25}
 
+# try:
+#     field = input("Choose field: ")
+#     print(user[field].upper())
+# except KeyError:
+#     print("error: the key is not exsict")
+# except AttributeError:
+#     print("error: costing to uppercase cannot with numberes ")        
+
+# Extra 8. Order Total
 try:
-    field = input("Choose field: ")
-    print(user[field].upper())
-except KeyError:
-    print("error: the key is not exsict")
-except AttributeError:
-    print("error: costing to uppercase cannot with numberes ")        
+    price = int(input("Price: "))
+    amount = int(input("Amount: "))
+except ValueError:
+    print("error: enter only number")
+    exit()    
+
+total = price * amount
+
+if amount > 3:
+    total = total*0.90
+
+print(total)
+# logicalerror
