@@ -60,9 +60,19 @@
 #     print("Welcome user")
 # the try/except is for error of expected things and not a syntax error
 # 8. Wrong Discount
-price = 100
-discount = 20
-print(discount/100) # this the bug
-final_price = (price/100)*(100-discount)
-print(final_price) # 99.8
+# price = 100
+# discount = 20
+# print(discount/100) # this the bug
+# final_price = (price/100)*(100-discount)
+# print(final_price) # 99.8
 # 9. Login Attempts Logic Bug
+password = "abc123"
+guess = input("Enter password: ")
+
+if guess == password:
+    print("Login successful")
+else:
+    print("Wrong password")
+# logicalerror
+# the bug is at line 72 != 
+    
