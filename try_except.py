@@ -13,9 +13,19 @@
 # except ZeroDivisionError:
 #     print("Cannot divide by zero ")
 # 3. Number From List
-numbers = [10, 20, 30]
+# numbers = [10, 20, 30]
+# try:
+#     index = int(input("Choose index: "))
+#     print(numbers[index])
+# except IndexError:
+#     print("Index not found ")
+# 4. Dictionary Lookup
+prices = {
+    "apple": 3,
+    "banana": 5}
+
 try:
-    index = int(input("Choose index: "))
-    print(numbers[index])
-except IndexError:
-    print("Index not found ")
+    item = input("Enter item: ")
+    print(prices[item])
+except KeyError:
+    print(" Item not found ")
