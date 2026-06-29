@@ -151,15 +151,28 @@
 # except IndexError:
 #     print("error: the index out of range")
 
-# Extra 6. Wrong Maximum
-numbers = [4, 10, 2, 8]
-maximum = 0
+# # Extra 6. Wrong Maximum
+# numbers = [4, 10, 2, 8]
+# maximum = 0
 
-for number in numbers:
-    if number > maximum:
-        maximum = number
+# for number in numbers:
+#     if number > maximum:
+#         maximum = number
 
-print(maximum)
-# the wrong output is all the time the number is biger
-# the expected output is 10
-# logicalerror
+# print(maximum)
+# # the wrong output is all the time the number is biger
+# # the expected output is 10
+# # logicalerror
+
+# Extra 7. User Profile
+user = {
+    "name": "Dana",
+    "age": 25}
+
+try:
+    field = input("Choose field: ")
+    print(user[field].upper())
+except KeyError:
+    print("error: the key is not exsict")
+except AttributeError:
+    print("error: costing to uppercase cannot with numberes ")        
