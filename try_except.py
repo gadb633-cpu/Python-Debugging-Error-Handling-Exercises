@@ -45,10 +45,16 @@
 # except ZeroDivisionError:
 #     print("error: division by zero")    
 # 6. Finally Message
-try:
-    score = int(input("Enter score: "))
-    print("Your score is", score)
-except ValueError:
-    print("Invalid score ")
-finally:
-    print("Check finished ")    
+# try:
+#     score = int(input("Enter score: "))
+#     print("Your score is", score)
+# except ValueError:
+#     print("Invalid score ")
+# finally:
+#     print("Check finished ")    
+# 7. Syntax Error vs Runtime Error
+name = input("Enter your name: ")
+if name == "admin":
+    print("Welcome admin")
+else:
+    print("Welcome user")
