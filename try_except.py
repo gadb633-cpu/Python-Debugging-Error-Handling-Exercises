@@ -125,18 +125,29 @@
 # print(average) # 33.336
 # # expected average is: 90
 
-# Extra 4. Product Price
-products = {
-    "pen": 4,
-    "notebook": 12}
+# # Extra 4. Product Price
+# products = {
+#     "pen": 4,
+#     "notebook": 12}
+
+# try:
+#     product = input("Product: ")
+#     amount = int(input("Amount: "))
+
+#     print(products[product] * amount)
+# except KeyError:
+#     print("error: the key is not exsict ")
+# except ValueError:
+#     print("error: the price is only a number ")
+
+# Extra 5. File Name Check Without File Handling
+files = ["data.txt", "users.csv", "notes.txt"]
 
 try:
-    product = input("Product: ")
-    amount = int(input("Amount: "))
-
-    print(products[product] * amount)
-except KeyError:
-    print("error: the key is not exsict ")
+    choice = int(input("Choose file number: "))
+    print(files[choice])
 except ValueError:
-    print("error: the price is only a number ")
-        
+    print("error: enter only number ")
+except IndexError:
+    print("error: the index out of range")
+    
