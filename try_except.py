@@ -193,20 +193,48 @@
 # print(total)
 # # logicalerror
 
-# Extra 9. Grade System
+# # Extra 9. Grade System
+# try:
+#     grade = int(input("Grade: "))
+# except ValueError:
+#     print("error: enter only number")
+#     exit()
+
+# if grade >= 90:
+#     print("Excellent")
+# elif grade >= 70:
+#     print("Good")
+# elif grade >= 55:
+#     print("Pass")
+# else:
+#     print("Fail")
+# # the output is wrong Because the if condition has to be true, and if not, then the line will go down after it, and not in any case.
+
+# Extra 10. Mini Bank Action
+balance = 100
+
 try:
-    grade = int(input("Grade: "))
+    action = input("Action: ")
+    amount = int(input("Amount: "))
+
+
+    
+    if action == "deposit":
+        balance = balance + amount
+    elif action == "withdraw":
+        if amount > balance:
+            print("Not enough money")
+        else:
+            balance = balance - amount
+    else:
+        print("Unknown action")
+
+    print("Balance:", balance)
+
 except ValueError:
     print("error: enter only number")
-    exit()
+    
+finally:
+    print("Bank action finished")
 
-if grade >= 90:
-    print("Excellent")
-elif grade >= 70:
-    print("Good")
-elif grade >= 55:
-    print("Pass")
-else:
-    print("Fail")
-# the output is wrong Because the if condition has to be true, and if not, then the line will go down after it, and not in any case.
-     
+
