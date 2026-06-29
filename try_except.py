@@ -177,18 +177,36 @@
 # except AttributeError:
 #     print("error: costing to uppercase cannot with numberes ")        
 
-# Extra 8. Order Total
+# # Extra 8. Order Total
+# try:
+#     price = int(input("Price: "))
+#     amount = int(input("Amount: "))
+# except ValueError:
+#     print("error: enter only number")
+#     exit()    
+
+# total = price * amount
+
+# if amount > 3:
+#     total = total*0.90
+
+# print(total)
+# # logicalerror
+
+# Extra 9. Grade System
 try:
-    price = int(input("Price: "))
-    amount = int(input("Amount: "))
+    grade = int(input("Grade: "))
 except ValueError:
     print("error: enter only number")
-    exit()    
+    exit()
 
-total = price * amount
-
-if amount > 3:
-    total = total*0.90
-
-print(total)
-# logicalerror
+if grade >= 90:
+    print("Excellent")
+elif grade >= 70:
+    print("Good")
+elif grade >= 55:
+    print("Pass")
+else:
+    print("Fail")
+# the output is wrong Because the if condition has to be true, and if not, then the line will go down after it, and not in any case.
+     
