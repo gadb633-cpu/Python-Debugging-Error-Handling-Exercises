@@ -53,8 +53,14 @@
 # finally:
 #     print("Check finished ")    
 # 7. Syntax Error vs Runtime Error
-name = input("Enter your name: ")
-if name == "admin":
-    print("Welcome admin")
-else:
-    print("Welcome user")
+# name = input("Enter your name: ")
+# if name == "admin":
+#     print("Welcome admin")
+# else:
+#     print("Welcome user")
+# the try/except is for error of expected things and not a syntax error
+# 8. Wrong Discount
+price = 100
+discount = 20
+final_price = (price/100)*(100-discount)
+print(final_price) # 99.8
